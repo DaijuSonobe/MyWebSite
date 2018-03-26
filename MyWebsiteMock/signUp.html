@@ -3,21 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<title>ベビフリ</title>
+<title>ベビケット-ユーザ新規登録-</title>
 </head>
 <body>
 <div class="container">
-
-<div class="title float-left" style="width: 18rem;">
+<br>
+<div class="title rounded text-dark bg-warning float-left" style="width: 19rem; height: 9rem">
   <div class="card-body">
     <h4 class="card-subtitle mb-2 text-muted">Babies' FleaMarket</h4>
-    <h1 class="card-title">ベビフリ</h1>
+    <h1 class="card-title text-info">&nbsp;ベビケット&nbsp;<img src="img/rubik-25817_1280.png" class="kids" style="width: 37px; height: 42px" alt="No-Image"></h1>
+    <font size="-1" class="card-subtitle mb-2 text-muted">&emsp;&emsp;&emsp;&emsp;‐未就学児用品専門サイト‐</font>
   </div>
 </div>
 
 <p style="clear:left;">
 
+<br>
 
+<h3>ユーザ新規登録</h3>
+<br><br>
+
+<form method="post" action="">
+
+  <div class="form-row">
+    <div class="col-row w-25">
+      氏名（漢字）
+      <input type="text" class="form-control" name="myoji-kanji" placeholder="氏（漢字）" required autofocus>
+    </div>
+    <div class="col-row w-25">
+      　
+      <input type="text" class="form-control" name="namae-kanji" placeholder="名（漢字）" autocomplete="off" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="col-row w-25">
+      氏名（カナ）
+      <input type="text" class="form-control" name="myoji-kana" placeholder="氏（カナ）" autocomplete="off" required>
+    </div>
+    <div class="col-row w-25">
+      　
+      <input type="text" class="form-control" name="namae-kana" placeholder="名（カナ）" autocomplete="off" required>
+    </div>
+  </div>
+  <br>
+  <div class="col-row w-50">
+      ニックネーム
+      <input type="text" class="form-control w-25" name="nickname" maxlength="4" placeholder="○○○○" required>
+      <font size="-2" id="nickname" class="form-text text-muted">　<span class="text-primary">他のユーザに公開される4文字以下のニックネーム</span></font>
+  </div>
+  <br>
+  <div class="form-group w-50">
+    郵便番号
+    <input type="text" maxlength="7" class="form-control w-25" id="inputZipCode" name="zip_code" placeholder="1234567" autocomplete="off" required>
+    <font size="-2" id="zipCode" class="form-text text-muted">　<span class="text-primary">ハイフン(‐)は不要</span></font>
+  </div>
+  <div class="form-group">
+    住所
+    <input type="text" class="form-control w-75" id="inputAddress" name="address" placeholder="東京都新宿区１－１－１　新宿マンション１０１" autocomplete="off" required>
+  </div>
+  生年月日<br>
+  <input type="date" name="birth_date" value="" autocomplete="off" required>
+  <font size="-2" id="birth_date" class="form-text text-muted">　<span class="text-primary">登録後の変更は不可</span></font>
+  <br>
+  <div class="form-group">
+    メールアドレス
+    <input type="email" class="form-control w-50" id="inputEmail1" name="email" aria-describedby="email" placeholder="babies@market.co.jp" autocomplete="off" required>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      ログインID
+      <input type="text" class="form-control w-50" maxlength="12" id="inputLoginId" name="login_id" autocomplete="off" required>
+      <font size="-2" id="loginId" class="form-text text-muted">　<span class="text-primary">英数字で入力。登録後の変更は不可</span></font>
+    </div>
+  </div>
+  <div class="form-group w-50">
+    パスワード
+    <input type="password" class="form-control w-25" maxlength="12" id="inputPassword1" name="password" placeholder="" autocomplete="off" required>
+    <font size="-2" id="password1" class="form-text text-muted">　<span class="text-primary">英数字と記号を含む8字‐12字のパスワード</span></font>
+  </div>
+  <div class="form-group w-50">
+    パスワード（確認用）
+    <input type="password" class="form-control w-25" maxlength="12" id="inputPassword2" name="password_confirm" placeholder="" autocomplete="off" required>
+    <font size="-2" id="password2" class="form-text text-muted">　<span class="text-primary">上記のパスワードと同じものを入力</span></font>
+  </div>
+  <br><br>
+  <button type="submit" class="btn btn-primary">確認</button>
+</form>
+<div align="right"><a href="MyUserListServlet" class="badge badge-success">Go Back</a></div>
 </div>
 </body>
 </html>

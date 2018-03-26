@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ベビケット-登録内容閲覧・修正-</title>
+</head>
+<body>
+<div class="container">
+<br>
+<div class="title rounded text-dark bg-warning float-left" style="width: 19rem; height: 9rem">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2 text-muted">Babies' FleaMarket</h4>
+    <h1 class="card-title text-info">&nbsp;ベビケット&nbsp;<img src="img/rubik-25817_1280.png" class="kids" style="width: 37px; height: 42px" alt="No-Image"></h1>
+    <font size="-1" class="card-subtitle mb-2 text-muted">&emsp;&emsp;&emsp;&emsp;‐未就学児用品専門サイト‐</font>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar text-center">
+  　　　　<img src="img/children-310223_1280.png" class="kids" style="width: 300px; height: 130px" alt="No-Image">
+  &emsp;<a href="#"><img src="img/user-2517433_1280.png" class="" style="width: 100px; height: 100px" alt="No-Image"><br><span class="badge badge-light">○○○○さんのMYページ</span></a>
+</nav>
+
+<p style="clear:left;">
+
+<p class="text-right"></p>
+
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">プロフィール</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">登録内容閲覧・修正</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">いいねをつけた商品</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">&nbsp;&nbsp;出品&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">購入履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">出品履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">売却履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ログアウト</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+  <br>
+    <h3 class="card-title">プロフィール更新</h3>
+<br><br>
+<form method="post" action="">
+<div class="myProfile text-left">
+  <div class="form-group">
+    プロフィール画像<br>
+    <input type="file" name="profile_pic" class="file" id="File">
+  </div>
+  <br>
+  <div class="col-row w-50">
+    ニックネーム
+    <input type="text" class="form-control w-25" name="nickname" maxlength="4" value="" required autofocus>
+    <font size="-2" id="zipCode" class="form-text text-muted">　<span class="text-primary">他のユーザに公開される4文字以下のニックネーム</span></font>
+  </div>
+  <br><br>
+  <div class="profile_comments">
+    コメント<br>
+    <textarea name="comment" cols="50" rows="10" maxlength="250"></textarea>
+  </div>
+  <br>
+
+</div>
+  <br><br>
+  <button type="submit" class="btn btn-primary">プロフィール更新</button>
+  &emsp;&emsp;&emsp;
+  <a href="" type="button" class="btn btn-muted">やめる</a>
+</form>
+
+  </div>
+</div>
+
+<div align="right"><a href="MyUserListServlet" class="badge badge-success">Go Back</a></div>
+</div>
+</body>
+</html>

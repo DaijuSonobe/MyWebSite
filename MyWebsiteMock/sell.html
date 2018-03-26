@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ベビケット-出品-</title>
+</head>
+<body>
+<div class="container">
+<br>
+<div class="title rounded text-dark bg-warning float-left" style="width: 19rem; height: 9rem">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2 text-muted">Babies' FleaMarket</h4>
+    <h1 class="card-title text-info">&nbsp;ベビケット&nbsp;<img src="img/rubik-25817_1280.png" class="kids" style="width: 37px; height: 42px" alt="No-Image"></h1>
+    <font size="-1" class="card-subtitle mb-2 text-muted">&emsp;&emsp;&emsp;&emsp;‐未就学児用品専門サイト‐</font>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar text-center">
+  　　　　<img src="img/children-310223_1280.png" class="kids" style="width: 300px; height: 130px" alt="No-Image">
+  &emsp;<a href="#"><img src="img/user-2517433_1280.png" class="" style="width: 100px; height: 100px" alt="No-Image"><br><span class="badge badge-light">○○○○さんのMYページ</span></a>
+</nav>
+
+<p style="clear:left;">
+
+<p class="text-right"></p>
+
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">プロフィール</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">登録内容閲覧・修正</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">いいねをつけた商品</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">&nbsp;&nbsp;出品&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">購入履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">出品履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">売却履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ログアウト</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+  <br>
+    <h3 class="card-title">出品画面</h3>
+<br><br>
+<form method="post" action="">
+<div align="left">
+  <div class="form-row col-row">
+    商品の画像
+    　　<input type="file" name="article_pic1" class="file1" id="File1">
+    　<input type="file" name="article_pic2" class="file2" id="File2">
+    　<input type="file" name="article_pic3" class="file3" id="File3">
+  </div>
+  <br>
+  <br>
+  <div class="form-row col-row">
+    商品の名称(タイトル)&emsp;&emsp;
+    <input type="text" class="form-control w-50" name="article_name" placeholder="商品名称" maxlength="25" required autofocus>
+    <font size="-2" id="article_name" class="form-text text-muted">　<span class="text-danger">25文字以下</span></font>
+  </div>
+  <br><br>
+  <div class="form-row col-row">
+    カテゴリ&emsp;&emsp;
+    <select name="category" role="button">
+      <optgroup label="衣料品(女の子)">
+        <option value="101">トップス - 衣料品(女の子)</option>
+        <option value="102">パンツ - 衣料品(女の子)</option>
+        <option value="103">スカート - 衣料品(女の子)</option>
+        <option value="104">ワンピース - 衣料品(女の子)</option>
+        <option value="105">アウター - 衣料品(女の子)</option>
+        <option value="106">下着/肌着 - 衣料品(女の子)</option>
+        <option value="107">パジャマ - 衣料品(女の子)</option>
+        <option value="108">靴 - 衣料品(女の子)</option>
+        <option value="109">小物 - 衣料品(女の子)</option>
+        <option value="110">その他 - 衣料品(女の子)</option>
+      </optgroup>
+      <optgroup label="衣料品(男の子)">
+        <option value="201">トップス - 衣料品(男の子)</option>
+        <option value="202">ボトムス - 衣料品(男の子)</option>
+        <option value="203">アウター - 衣料品(男の子)</option>
+        <option value="204">下着/肌着 - 衣料品(男の子)</option>
+        <option value="205">パジャマ - 衣料品(男の子)</option>
+        <option value="206">靴 - 衣料品(男の子)</option>
+        <option value="207">小物 - 衣料品(男の子)</option>
+        <option value="208">その他 - 衣料品(男の子)</option>
+      </optgroup>
+      <optgroup label="日用品">
+        <option value="301">ミルク - 日用品</option>
+        <option value="302">ベビー食 - 日用品</option>
+        <option value="303">ベビー食器 - 日用品</option>
+        <option value="304">抱っこひも - 日用品</option>
+        <option value="305">ベビーカー - 日用品</option>
+        <option value="306">チャイルドシート - 日用品</option>
+        <option value="307">小物 - 日用品</option>
+        <option value="308">その他 - 日用品</option>
+      </optgroup>
+      <optgroup label="おもちゃ">
+        <option value="401">絵本 - おもちゃ</option>
+        <option value="402">知育玩具 - おもちゃ</option>
+        <option value="403">その他 - おもちゃ</option>
+      </optgroup>
+    </select>
+    <font size="-2" id="category" class="form-text text-muted">　<span class="text-danger">商品の該当するカテゴリを選択</span></font>
+  </div>
+  <br><br>
+  <div class="form-row col-row">
+    サイズ&emsp;&emsp;
+    <select name="category" role="button">
+      <option label="なし" value="1">なし</option>
+      <option label="～50" value="2">～50</option>
+      <option label="～60" value="3">～60</option>
+      <option label="～70" value="4">～70</option>
+      <option label="～80" value="5">～80</option>
+      <option label="～90" value="6">～90</option>
+      <option label="～100" value="7">～100</option>
+      <option label="～110" value="8">～110</option>
+      <option label="～120" value="9">～120</option>
+      <option label="不明・その他" value="10">不明・その他</option>
+    </select>
+    <font size="-2" id="size" class="form-text text-muted">　<span class="text-danger">商品の該当するサイズを選択(衣料品以外の場合は“なし”を選択)</span></font>
+  </div>
+  <br><br>
+
+  <div class="form-row col-row w-50">
+    商品の状態&emsp;&emsp;
+    <select name="aticle_condition" role="button">
+      <option label="中古" value="used">中古</option>
+      <option label="ほぼ新品" value="nearly_new">ほぼ新品</option>
+      <option label="新品" value="new">新品</option>
+    </select>
+  </div>
+  <br><br>
+  <div class="form-row col-row">
+    配送料の負担&emsp;&emsp;
+    <select name="shipping_defrayment" role="button">
+      <option label="出品者負担(配送料込み)" value="seller">出品者負担(配送料込み)</option>
+      <option label="購入者負担" value="buyer">購入者負担</option>
+    </select>
+  </div>
+  <br><br>
+  <div class="form-row col-row">
+    配送方法&emsp;&emsp;
+    <input type="checkbox" name="delivery1" value="1">ゆうパック
+    &emsp;<input type="checkbox" name="delivery2" value="2">普通郵便(定型・定形外)
+    &emsp;<input type="checkbox" name="delivery3" value="3">クロネコヤマト
+    &emsp;<input type="checkbox" name="delivery4" value="4">佐川急便
+    &emsp;<input type="checkbox" name="delivery5" value="5">クリックポスト
+    &emsp;<input type="checkbox" name="delivery6" value="6">その他
+  </div>
+  <br><br>
+  <div class="form-row col-row w-50">
+    発送までの日数&emsp;&emsp;
+    <select name="days_to_shopping" role="button">
+      <option label="即日" value="1">即日</option>
+      <option label="1日～3日" value="2">1日～3日</option>
+      <option label="1週間以内" value="3">1週間以内</option>
+    </select>
+  </div>
+  <br><br>
+  <div class="article_comments">
+    商品コメント<br>
+    <textarea name="comment" cols="80" rows="10" maxlength="500"></textarea>
+    <font size="-2" id="article_comments" class="form-text text-muted">　<span class="text-danger">500文字以下</span></font>
+  </div>
+  <br><br>
+</div>
+  <br><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+</div>
+
+<div align="right"><a href="MyUserListServlet" class="badge badge-success">Go Back</a></div>
+</div>
+</div>
+</body>
+</html>

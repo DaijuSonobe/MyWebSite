@@ -3,28 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<title>ベビフリ</title>
+<title>ベビケット-登録内容閲覧・修正-</title>
 </head>
 <body>
 <div class="container">
-
-<div class="title float-left" style="width: 18rem;">
+<br>
+<div class="title rounded text-dark bg-warning float-left" style="width: 19rem; height: 9rem">
   <div class="card-body">
     <h4 class="card-subtitle mb-2 text-muted">Babies' FleaMarket</h4>
-    <h1 class="card-title">ベビフリ</h1>
+    <h1 class="card-title text-info">&nbsp;ベビケット&nbsp;<img src="img/rubik-25817_1280.png" class="kids" style="width: 37px; height: 42px" alt="No-Image"></h1>
+    <font size="-1" class="card-subtitle mb-2 text-muted">&emsp;&emsp;&emsp;&emsp;‐未就学児用品専門サイト‐</font>
   </div>
 </div>
 
+<br>
+
+<nav class="navbar text-center">
+  　　　　<img src="img/children-310223_1280.png" class="kids" style="width: 300px; height: 130px" alt="No-Image">
+  &emsp;<a href="#"><img src="img/user-2517433_1280.png" class="" style="width: 100px; height: 100px" alt="No-Image"><br><span class="badge badge-light">○○○○さんのMYページ</span></a>
+</nav>
+
 <p style="clear:left;">
 
-登録内容閲覧・修正
-いいねをつけた商品
-評価
-購入履歴
-出品履歴
-売却履歴
-ログアウト
+<p class="text-right"></p>
 
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">プロフィール</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">登録内容閲覧・修正</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">いいねをつけた商品</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">&nbsp;&nbsp;出品&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">購入履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">出品履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">売却履歴</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ログアウト</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+  <br>
+    <h3 class="card-title">登録内容閲覧・修正</h3>
+<br><br>
+<form method="post" action="">
+<div class="myProfile text-left">
+  <div class="form-row">
+    <div class="col-row w-25">
+      氏名（漢字）
+      <input type="text" class="form-control" name="myoji-kanji" placeholder="氏（漢字）" required autofocus>
+    </div>
+    <div class="col-row w-25">
+      　
+      <input type="text" class="form-control" name="namae-kanji" placeholder="名（漢字）" autocomplete="off" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="col-row w-25">
+      氏名（カナ）
+      <input type="text" class="form-control" name="myoji-kana" placeholder="氏（カナ）" autocomplete="off" required>
+    </div>
+    <div class="col-row w-25">
+      　
+      <input type="text" class="form-control" name="namae-kana" placeholder="名（カナ）" autocomplete="off" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-group w-50">
+    郵便番号
+    <input type="text" maxlength="7" class="form-control w-25" id="inputZipCode" name="zip_code" value="" autocomplete="off" required>
+    <font size="-2" id="zipCode" class="form-text text-muted">　<span class="text-primary">ハイフン(‐)は不要</span></font>
+  </div>
+  <div class="form-group">
+    住所
+    <input type="text" class="form-control w-75" id="inputAddress" name="address" value="" autocomplete="off" required>
+  </div>
+  生年月日<br>
+  <input type="date" name="birth_date" value="" readonly>
+  <br>
+  <br>
+  <div class="form-group">
+    メールアドレス
+    <input type="email" class="form-control w-50" id="inputEmail1" name="email" aria-describedby="email" placeholder="babies@market.co.jp" autocomplete="off" required>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      ログインID
+      <input type="text" class="form-control w-50" maxlength="12" id="inputLoginId" name="login_id"  value="" readonly>
+    </div>
+  </div>
+  <div class="form-group w-50">
+    パスワード
+    <input type="password" class="form-control w-25" maxlength="12" id="inputPassword1" name="password" placeholder="" autocomplete="off" required>
+    <font size="-2" id="loginId" class="form-text text-muted">　<span class="text-primary">英数字と記号を含む8字‐12字のパスワード</span></font>
+  </div>
+  <div class="form-group w-50">
+    パスワード（確認用）
+    <input type="password" class="form-control w-25" maxlength="12" id="inputPassword2" name="password_confirm" placeholder="" autocomplete="off" required>
+    <font size="-2" id="loginId" class="form-text text-muted">　<span class="text-primary">上記のパスワードと同じものを入力</span></font>
+  </div>
+</div>
+  <br><br>
+  <button type="submit" class="btn btn-primary">登録内容変更</button>
+  &emsp;&emsp;&emsp;
+  <a href="" type="button" class="btn btn-muted">やめる</a>
+</form>
+
+  </div>
+</div>
+
+<div align="right"><a href="MyUserListServlet" class="badge badge-success">Go Back</a></div>
 </div>
 </body>
 </html>

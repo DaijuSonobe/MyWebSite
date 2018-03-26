@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<title>ベビケット-ログイン-</title>
+<title>ベビケット-ユーザ新規登録入力確認画面-</title>
 </head>
 <body>
 <div class="container">
@@ -20,23 +20,35 @@
 
 <br>
 
-<div class="login-menu">
-  <form class="px-4 py-3">
-    <div class="form-group">
-      ログインID
-      <input type="text" class="form-control w-50" id="loginID" placeholder="LoginID" autocomplete="on" required autofocus>
-    </div>
-    <div class="form-group">
-      パスワード
-      <input type="password" class="form-control w-50" id="password" placeholder="Password" autocomplete="on" required>
-    </div>
-    <br>
-    <button type="submit" class="btn btn-info">Sign in</button>
-  </form>
-  <br>
-  <div class="dropdown-divider"></div>
-  登録がお済みでない方→ <span class="badge badge-pill badge-light"><a href="signUp.html" class="dropdown-item">新規登録</a></span>
-</div>
+<h3>ユーザ新規登録(確認)</h3>
+<br><br>
+
+<form method="post" action="">
+
+氏名（漢字）：〇〇〇　〇〇〇
+<br>
+氏名（カナ）：〇〇〇　〇〇〇
+<br>
+ニックネーム：ぴょんた
+<br>
+郵便番号：1234567
+<br>
+住所：東京都新宿区１－１－１　新宿マンション１０１
+<br>
+生年月日：1999/01/01
+<br>
+メールアドレス：babies@market.co.jp
+<br>
+ログインID：pipipin234
+<br>
+パスワード：99mdf/okof
+<br><br>
+上記の内容で登録します。よろしいですか？
+
+  <br><br>
+  <button type="submit" class="btn btn-primary">登録</button>
+  &emsp;&emsp;<a href="#" class="btn btn-outline-dark" type="button">訂正</a>
+</form>
 <div align="right"><a href="MyUserListServlet" class="badge badge-success">Go Back</a></div>
 </div>
 </body>
