@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<title>ベビケット-出品-</title>
+<title>ベビケット-商品詳細編集-</title>
 </head>
 <body>
 <div class="container">
@@ -18,50 +18,20 @@
 
 <br>
 
-<nav class="navbar text-center">
-  　　　　<img src="img/children-310223_1280.png" class="kids" style="width: 300px; height: 130px" alt="No-Image">
-  &emsp;<a href="myProfile.html"><img src="img/user-2517433_1280.png" class="" style="width: 100px; height: 100px" alt="No-Image"><br><span class="badge badge-light">○○○○さんのMYページ</span></a>
+<nav class="navbar float-right text-center">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+  </form>
+  &emsp;&emsp;<a href="login.html"><img src="img/user-2517433_1280.png" class="float-right" style="width: 80px; height: 80px " alt="No-Image"><br><span class="badge badge-light">ゲストさん</span></a>&nbsp;
 </nav>
 
 <p style="clear:left;">
+<p style="clear:right;">
 
 <p class="text-right"></p>
-
-<div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="index.html">HOME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="myProfile.html">プロフィール</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="myRegistrationData.html">登録内容閲覧・修正</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="myFavorite.html">いいねをつけた商品</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="sell.html">&nbsp;&nbsp;出品&nbsp;&nbsp;</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="boughtList.html">購入履歴</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="sellList.html">出品履歴</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="soldList.html">売却履歴</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="logout.html">ログアウト</a>
-      </li>
-    </ul>
-  </div>
-  <div class="card-body">
-  <br>
-    <h3 class="card-title">出品画面</h3>
+<br><br>
+    <h3 class="card-title text-center">商品詳細編集</h3>
 <br><br>
 <form method="post" action="">
 <div align="left">
@@ -128,7 +98,7 @@
     <font size="-2" id="category" class="form-text text-muted">　<span class="text-danger">商品の該当するカテゴリを選択</span></font>
   </div>
   <br><br>
-  <div class="form-row col-row w-50">
+  <div class="form-row col-row w-75">
     サイズ：&emsp;&emsp;
     <select class="form-control w-25" name="size" role="button">
       <option label="なし" value="1">なし</option>
@@ -148,7 +118,7 @@
 
   <div class="form-row col-row w-50">
     商品の状態：&emsp;&emsp;
-    <select class="form-control w-25" name="item_condition" role="button">
+    <select class="form-control w-25"name="item_condition" role="button">
       <option label="中古" value="1">中古</option>
       <option label="ほぼ新品" value="2">ほぼ新品</option>
       <option label="新品" value="3">新品</option>
@@ -175,7 +145,7 @@
   <br><br>
   <div class="form-row col-row w-50">
     配送料(購入者負担の場合のみ入力)：&emsp;&emsp;
-    <input type="text" class="form-control w-25" name="delivery_cost" value="0" size="4" maxlength="4">&nbsp;円
+    <input type="text" class="form-control w-25" name="delivery_cost" size="4" maxlength="4">&nbsp;円
   </div>
   <br><br>
   <div class="form-row col-row w-50">
@@ -189,17 +159,18 @@
   <br><br>
   <div class="item_comments">
     商品コメント：<br>
-    <textarea class="form-control w-75" name="comment" cols="80" rows="10" maxlength="500" required></textarea>
+    <textarea class="form-control w-50" name="comment" cols="80" rows="10" maxlength="500"></textarea>
     <font size="-2" id="article_comments" class="form-text text-muted">　<span class="text-danger">500文字以下</span></font>
   </div>
   <br><br>
 </div>
-  <button type="submit" class="btn btn-primary">出品する</button>
-  <br><br>
+  <div align="center">
+    <button type="submit" class="btn btn-success">編集する</button>
+  </div>
+  <br><br><br><br>
 </form>
 
-</div>
-</div>
+<div align="right"><a href="index.html" class="badge badge-success">HOME</a></div>
 </div>
 </body>
 </html>

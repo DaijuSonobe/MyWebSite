@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<title>ベビケット-購入履歴-</title>
+<title>ベビケット-出品者情報-</title>
 </head>
 <body>
 <div class="container">
@@ -18,51 +18,29 @@
 
 <br>
 
-<nav class="navbar text-center">
-  　　　　<img src="img/children-310223_1280.png" class="kids" style="width: 300px; height: 130px" alt="No-Image">
-  &emsp;<a href="myProfile.html"><img src="img/user-2517433_1280.png" class="" style="width: 100px; height: 100px" alt="No-Image"><br><span class="badge badge-light">○○○○さんのMYページ</span></a>
+<nav class="navbar float-right text-center">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+  </form>
+  &emsp;&emsp;<a href="login.html"><img src="img/user-2517433_1280.png" class="float-right" style="width: 80px; height: 80px " alt="No-Image"><br><span class="badge badge-light">ゲストさん</span></a>&nbsp;
 </nav>
 
 <p style="clear:left;">
+<p style="clear:right;">
 
 <p class="text-right"></p>
 
 <div class="card text-center">
   <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="index.html">HOME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="myProfile.html">プロフィール</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="myRegistrationData.html">登録内容閲覧・修正</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="myFavorite.html">いいねをつけた商品</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="sell.html">&nbsp;&nbsp;出品&nbsp;&nbsp;</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="boughtList.html">購入履歴</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="sellList.html">出品履歴</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="soldList.html">売却履歴</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="logout.html">ログアウト</a>
-      </li>
-    </ul>
+    <br>
+    <img src="img/user-2517433_1280.png" class="seller_image" style="width: 200px; height: 200px " alt="No-Image"><br>〇〇〇〇さん
+    <br><br>
+    <h5 class="card-title">コメント：</h5>
+    始めたばかりです。どうぞよろしくお願いします。
+    <br><br><br>
   </div>
   <div class="card-body">
-  <br>
-    <h3 class="card-title">購入履歴</h3>
-<br>
     <div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 265px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
@@ -74,7 +52,7 @@
 	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
-    <div class="card rounded float-left text-center" style="width: 25%;">
+	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 265px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
@@ -85,7 +63,7 @@
 	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
-    <div class="card rounded float-left text-center" style="width: 25%;">
+	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 265px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
@@ -96,8 +74,12 @@
 	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
+    <br><br>
+  </div>
 </div>
-</div>
+
+
+<div align="right"><a href="index.html" class="badge badge-success">HOME</a></div>
 </div>
 </body>
 </html>

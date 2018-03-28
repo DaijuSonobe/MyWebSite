@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
 <title>ベビケット-HOME-</title>
 </head>
 <body>
@@ -37,7 +42,16 @@
 	<a href="index.html"><button type="button" class="btn bg-primary btn-outline-info text-white w-25 p-3 float-left">新着</button></a>
 	<a href="index.html"><button type="button" class="btn bg-primary btn-outline-info text-white w-25 p-3 float-left">おすすめ</button></a>
     <a href="categorySearch.html"><button type="button" class="btn bg-primary btn-outline-info text-white w-25 p-3 float-left">カテゴリ検索</button></a>
-	<a href="myProfile.html"><button type="button" class="btn bg-primary btn-outline-info text-white w-25 p-3 float-left">Myページ</button></a>
+	<div class="btn-group dropright w-25 p-3 float-left">
+      <button type="button" class="btn bg-primary btn-outline-info text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      並び替え
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">安い順</a>
+        <a class="dropdown-item" href="#">高い順</a>
+        <a class="dropdown-item" href="#">人気順</a>
+      </div>
+    </div>
 	</div>
 
 	<a href="sell.html"><img src="img/icon-1728545_1920.jpg" class="sell" style="width: 100px; height: 100px; position:fixed; bottom:20px;" alt="No-Image"></a>
@@ -46,154 +60,117 @@
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 	<div class="card rounded float-left text-center" style="width: 25%;">
 	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
 	  <div class="card-body">
 	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
 	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
 	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
-	  </div>
-	</div>
-	<div class="card rounded float-left text-center" style="width: 25%;">
-	  <img class="card-img-top mx-auto" style="width: 280px; height: 200px" src="img/quality-control-1257235_1920.jpg" alt="No-Image">
-	  <div class="card-body">
-	    <h5 class="card-title">商品名</h5>
-	    <h5 class="card-subtitle">〇〇〇&nbsp;円</h5>
-	    <br>
-	    <font size="-1" class="card-text">ここには商品説明が入ります。50字程度で？</font>
-	    <br><br>
-	    <a href="itemDetail.html" class="btn btn-info border-primary">もっと見る</a>
+	    <a href="articleDetail.html" class="btn btn-info border-primary">もっと見る</a>
 	  </div>
 	</div>
 </div>
