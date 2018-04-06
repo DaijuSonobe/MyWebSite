@@ -11,6 +11,17 @@ public class ItemDataBeans implements Serializable {
 	private String image3;
 	private String name;
 	private int price;
+	private String createDate;
+	private String updateDate;
+	private String nickname;
+	private String mainCategory;
+	private String subCategory;
+	private String size;
+	private String status;
+	private String deliveryDefrayment;
+	private String deliveryMethod;
+	private int deliveryCost;
+	private String daysToShipping;
 	private String comment;
 
 	public ItemDataBeans() {
@@ -70,6 +81,94 @@ public class ItemDataBeans implements Serializable {
 
 	public void setPrice(int price) {
 		this.price = price;
+	}
+
+	public String getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(String createDate) {
+		this.createDate = createDate;
+	}
+
+	public String getUpdateDate() {
+		return updateDate;
+	}
+
+	public void setUpdateDate(String updateDate) {
+		this.updateDate = updateDate;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
+	public String getMainCategory() {
+		return mainCategory;
+	}
+
+	public void setMainCategory(String mainCategory) {
+		this.mainCategory = mainCategory;
+	}
+
+	public String getSubCategory() {
+		return subCategory;
+	}
+
+	public void setSubCategory(String subCategory) {
+		this.subCategory = subCategory;
+	}
+
+	public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getDeliveryDefrayment() {
+		return deliveryDefrayment;
+	}
+
+	public void setDeliveryDefrayment(String deliveryDefrayment) {
+		this.deliveryDefrayment = deliveryDefrayment;
+	}
+
+	public String getDeliveryMethod() {
+		return deliveryMethod;
+	}
+
+	public void setDeliveryMethod(String deliveryMethod) {
+		this.deliveryMethod = deliveryMethod;
+	}
+
+	public int getDeliveryCost() {
+		return deliveryCost;
+	}
+
+	public void setDeliveryCost(int deliveryCost) {
+		this.deliveryCost = deliveryCost;
+	}
+
+	public String getDaysToShipping() {
+		return daysToShipping;
+	}
+
+	public void setDaysToShipping(String daysToShipping) {
+		this.daysToShipping = daysToShipping;
 	}
 
 	public String getComment() {

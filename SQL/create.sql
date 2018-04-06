@@ -47,6 +47,7 @@ CREATE TABLE item(
   , delivery_cost int NOT NULL
   , days_to_shipping int NOT NULL
   , comment text NOT NULL
+  , create_date DATETIME NOT NULL
+  , update_date DATETIME NOT NULL
 ); 
-
 
